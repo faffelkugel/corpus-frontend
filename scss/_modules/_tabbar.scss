@@ -9,12 +9,16 @@
   height: 9.8rem;
   //Typography
   //Visual
-  background-color: red;
+  background-color: rgba(26,30,33,.9);
   //Misc
 
   .tab {
     width: 20%;
     height: 100%;
-    background-color: blue;
+    float: left;
+
+    &.active {
+      background-color: $dietcolor;
+    }
   }
 }
