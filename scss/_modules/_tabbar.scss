@@ -15,10 +15,30 @@
   .tab {
     width: 20%;
     height: 100%;
+    padding-top: 1.0rem;
     float: left;
+    text-align: center;
+    text-decoration: none;
+
+    .tabbar-icon {
+      opacity: .2;
+    }
+
+    p {
+      font-size: 2.0rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
 
     &.active {
-      background-color: $dietcolor;
+      .tabbar-icon {
+        opacity: inherit;
+      }
     }
+    &.active#tab-training { background-color: $trainingcolor; }
+    &.active#tab-diet { background-color: $dietcolor; }
+    &.active#tab-today { background-color: $todaycolor; }
+    &.active#tab-me { background-color: $mecolor; }
+    &.active#tab-more { background-color: $morecolor; }
   }
 }
