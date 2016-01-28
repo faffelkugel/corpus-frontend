@@ -1,0 +1,12 @@
+
+body img {
+  width: 100%;
+}
+
+#launch_buttons {
+  width: calc(100% - 80px);
+  height: 90px;
+  margin-left: 40px;
+  position: absolute;
+  bottom: 44px;
+}
