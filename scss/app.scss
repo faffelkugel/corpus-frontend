@@ -1,5 +1,6 @@
 // Helpers
-@import "_helpers/reboot";
+//@import "_helpers/reboot";
+@import "_helpers/normalize";
 @import "_helpers/tools";
 @import "_helpers/variables";
 @import "_helpers/mixins";
@@ -18,3 +19,15 @@
 @import "_modules/progress-bar";
 @import "_modules/icons";
 @import "_modules/buttons";
+
+
+:root {
+  font-size: 10px;
+  background-color: black; // Temporary bg color.
+}
+
+// Write Comments
+//  “TODO:” gives a good indication of things we need to check up on.
+// Use REM’s & EM’s
+// Additional styling is done only with classes. For example, we reboot some <table> styles for a simpler baseline and later provide .table, .table-bordered, and more.
+// Use Reboot to normalise HTML elements across browsers.
