@@ -1,0 +1,7 @@
+
+//Heading
+@mixin heading($fontweight) {
+  font-weight: $fontweight;
+  color: $lightcolor;
+  text-transform: uppercase;
+}
