@@ -1,3 +1,6 @@
 # Ignore docs files
 scss/.sass-cache
 scss/.sass-cache/*
+
+# Ignore SCSS compiled .min file
+scss/app.min.css
