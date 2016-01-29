@@ -1,3 +1,90 @@
 
 // card
 // card stack
+
+// Card slider on traning ----------
+
+// Workout program counter
+.program-count {
+  text-align: center;
+  margin: $x-small 0;
+}
+
+// Slide between programs
+.card-slider {
+  height: 440px; // Original size is 140px!!!!!
+  overflow-y: hidden;
+}
+
+
+.card-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.workout-cards-list li {
+  display: inline-block;
+}
+
+
+
+
+// Program iten
+.workout-cards-item {
+  height: 100%;
+  width: calc(100vw - 30px);
+  margin: 0 7px;
+  text-align: center;
+  position: relative;
+
+}
+
+.workout-cards-item:first-child {
+  margin-left: 15px;
+}
+
+.workout-cards-item:last-child {
+  margin-right: 15px;
+}
+
+.workout-cards-item-background {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.workout-cards-item-content {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.workout-cards-item-content h2 {
+  margin: 32px 0 7px;
+
+}
+
+.workout-cards-item-content-icons {
+  margin-top: 20px;
+}
+
+.workout-cards-item-content-icons ul {
+  display: inline-block;
+}
+
+.workout-cards-item-content-icons li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.workout-cards-item-content-icons li:first-child {
+  margin-left: 10px;
+}
+
+// Lorem ipsum ----------
