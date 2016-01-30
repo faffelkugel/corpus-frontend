@@ -7,11 +7,17 @@
   top: 0;
   //Box-model
   width: 100vw;
-  min-height: 8.8rem;
+  min-height: 12.8rem;
   //Visual
   background-color: $darkcolor;
   //Misc
   z-index: 1;
+
+  .statusbar-container {
+    //Box-model
+    width: 100vw;
+    height: 4rem;
+  }
 
   .navbar {
     //Box-model
@@ -44,7 +50,7 @@
   //Positioning
   position: absolute;
   left: 0;
-  top: 8.8rem;
+  top: 12.8rem;
   //Box-model
   width: 100vw;
   min-height: 6.8rem;

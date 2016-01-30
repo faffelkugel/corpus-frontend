@@ -555,9 +555,12 @@ input[type=search] {
   left: 0;
   top: 0;
   width: 100vw;
-  min-height: 8.8rem;
+  min-height: 12.8rem;
   background-color: #23282c;
   z-index: 1; }
+  .unified-bar-container .statusbar-container {
+    width: 100vw;
+    height: 4rem; }
   .unified-bar-container .navbar {
     width: 100vw;
     height: 8.8rem;
@@ -577,7 +580,7 @@ input[type=search] {
 .toolbar-container {
   position: absolute;
   left: 0;
-  top: 8.8rem;
+  top: 12.8rem;
   width: 100vw;
   min-height: 6.8rem;
   background-color: #23282c; }
