@@ -2,7 +2,7 @@
 // Navbar
 .unified-bar-container {
   //Positioning
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   //Box-model
@@ -10,20 +10,16 @@
   min-height: 8.8rem;
   //Visual
   background-color: $darkcolor;
+  //Misc
+  z-index: 1;
 
   .navbar {
-    //Positioning
-    position: fixed;
-    left: 0;
-    top: 0;
     //Box-model
     width: 100vw;
     height: 8.8rem;
     padding: 0 $medium;
     //Typography
     line-height: 8.8rem;
-    //Misc
-    z-index: 100;
 
     ul {
       //Typography
@@ -44,26 +40,9 @@
       }
     }
   }
-  .toolbar-container {
-    //Positioning
-    position: absolute;
-    left: 0;
-    top: 8.8rem;
-    //Box-model
-    width: 100vw;
-    min-height: 8.8rem;
-
-    background-color: blue;
-
-    .searchbar-container {
-    }
-    .filter-container {
-    }
-  }
 }
 
 // Toolbar
-/*
 .toolbar-container {
   //Positioning
   position: absolute;
@@ -71,16 +50,46 @@
   top: 8.8rem;
   //Box-model
   width: 100vw;
-  min-height: 8.8rem;
-
-  background-color: blue;
+  min-height: 6.8rem;
+  //Visual
+  background-color: $darkcolor;
 
   .searchbar-container {
+    //Box-model
+    width: 100vw;
+    height: 9.2rem;
+    //Typography
+    line-height: 6.8rem;
+
+    ul {
+      //Box-model
+      padding: 0 $medium;
+      //Typography
+      list-style: none;
+
+      li {
+        //Positioning
+        display: inline-block;
+        float: left;
+        //Box-model
+        width: calc(100vw - 16rem);
+        height: 6.8rem;
+        //Typography
+        text-align: center;
+
+        img { vertical-align: middle; }
+
+        &:first-child,&:last-child { width: 4.8rem; }
+      }
+    }
   }
   .filter-container {
+    //Box-model
+    width: 100vw;
+    height: 6.8rem;
   }
 }
-*/
+
 // searchbar
 // switch
 

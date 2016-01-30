@@ -10,3 +10,10 @@ button:focus,
 input:focus {
   outline: none;
 }
+
+// Input
+input[type=search] { // Overrides Safari mobiles annoying border-radius on input elements.
+  -webkit-appearance: none;
+  -webkit-border-radius:0;
+  border-radius:0;
+}
