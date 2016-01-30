@@ -5,3 +5,5 @@ scss/.sass-cache/*
 # Ignore SCSS compiled .min file
 scss/app.min.css
 scss/app.min.css
+
+config.codekit
