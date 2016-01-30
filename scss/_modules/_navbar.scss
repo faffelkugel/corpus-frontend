@@ -17,17 +17,14 @@
     //Box-model
     width: 100vw;
     height: 8.8rem;
-    padding: 0 $medium;
     //Typography
     line-height: 8.8rem;
 
     ul {
-      //Typography
-      list-style: none;
+      @include ul-list;
 
       li {
         //Positioning
-        display: inline-block;
         float: left;
         //Box-model
         width: calc(100vw - 16rem);
@@ -62,14 +59,10 @@
     line-height: 6.8rem;
 
     ul {
-      //Box-model
-      padding: 0 $medium;
-      //Typography
-      list-style: none;
+      @include ul-list;
 
       li {
         //Positioning
-        display: inline-block;
         float: left;
         //Box-model
         width: calc(100vw - 16rem);
@@ -87,13 +80,33 @@
     //Box-model
     width: 100vw;
     height: 6.8rem;
+    //Typography
+    line-height: 6.8rem;
+
+    ul {
+      @include ul-list;
+
+      li {
+        //Positioning
+        float: left;
+        //Box-model
+        width: percentage(1/3);
+        height: 6.8rem;
+        //Typography
+        text-align: center;
+        border-bottom: 4px solid $darkcolor;
+
+        &.active {
+          border-bottom: 4px solid $trainingcolor;
+
+          h3 {
+            color: $trainingcolor;
+            font-weight: 700;
+          }
+        }
+
+        a { text-decoration: none; }
+      }
+    }
   }
 }
-
-// searchbar
-// switch
-
-
-// DANGER
-ul,li { padding: 0; } // TODO: Delete before pull request.
-// DANGER
