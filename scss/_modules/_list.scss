@@ -21,6 +21,7 @@ li.item {
     float: left;
     width: 8rem;
     padding: $medium 0;
+    //Visual
     background-color: rgba(red, .2);
   }
   .image-container {
@@ -28,6 +29,7 @@ li.item {
     float: left;
     width: 16rem;
     padding: $medium 0;
+    //Visual
     background-color: rgba(red, .2);
   }
   .content-container {
@@ -35,7 +37,17 @@ li.item {
     float: left;
     width: calc(100vw - 8rem);
     padding: $medium $large $medium 0;
-    background-color: rgba(grey, .2);
+    //Visual
+    background-color: rgba(white, .1);
+
+    .sub-container {
+      //Box-model
+      margin-top: $x-small;
+      //Visual
+      background-color: rgba(white, .1);
+
+      h4 { margin-bottom: 0; }
+    }
   }
   .icon-container + .content-container {
     width: calc(100vw - 19.2rem);

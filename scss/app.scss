@@ -34,6 +34,11 @@
   padding-top: 28.8rem;
 }
 
+// HACK: Temporary padding-bottom, to accomidate for tabbar height. Need fix, since not all screens has tabbars.
+body {
+  padding-bottom: 38.6rem;
+}
+
 // HACK: Temporary hidden class to hide content. Duh!.
 .hidden {
   display: none;
