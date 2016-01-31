@@ -16,9 +16,8 @@ li.item {
   //Visual
   border-top: 1px solid rgba($lightcolor, .15);
 
-  &:last-child {
-    border-bottom: 1px solid rgba($lightcolor, .15);
-  }
+  &:first-child { border-top: 0; }
+  &:last-child { border-bottom: 1px solid rgba($lightcolor, .15); }
 
   .icon-container {
     //Box-model
