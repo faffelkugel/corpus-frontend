@@ -1,17 +1,19 @@
 
 // Launch screen
+  // Todo: Set fonts and styling for buttons
 
-//Facebook
 
+// Facebook
 button[name="facebook"] {
   width: 100%;
   height: 44px;
   margin-bottom: 12px;
-  background: #3b5998;
+  background: rgba(59, 89, 152, 0.9); // Todo: fix fb color
   border: none;
   color: white;
 }
 
+// Sign in
 button[name="signin"] {
   width:calc(50% - 6px);
   height: 44px;
@@ -21,6 +23,7 @@ button[name="signin"] {
   color: white;
 }
 
+// Sign up
 button[name="signup"] {
   width:calc(50% - 6px);
   height: 44px;
