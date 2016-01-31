@@ -1,0 +1,25 @@
+
+
+#more {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  // background-position: center;
+}
+
+// Todo: fix fonts and styleing
+// Todo: make a general style for diet, me and more??? (same style)
+
+.comming-soon-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.comming-soon-text img {
+  margin-bottom: 20px;
+}
