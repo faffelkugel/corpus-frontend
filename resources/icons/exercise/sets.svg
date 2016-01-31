@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="28px" viewBox="0 0 42 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>_assets/resources/icons/exercise/sets</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="exercise-icons" sketch:type="MSArtboardGroup" transform="translate(-20.000000, -20.000000)" fill="#FFFFFF">
+            <g id="sets" sketch:type="MSLayerGroup" transform="translate(20.000000, 20.000000)">
+                <path d="M29,1 L25,5 L21,1 L17,5 L13,1 L0,14 L13,27 L17,23 L20.5,27 L25,23 L29,27 L42,14 L29,1 Z M24,6.5 L21,4 L11,14 L21,24 L24,21.5 L16,14 L24,6.5 Z M16,6.5 L13,4 L3,14 L13,24 L16,21.5 L8,14 L16,6.5 Z M29,4 L19,14 L29,24 L39,14 L29,4 Z" id="Path-159" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
