@@ -1,0 +1,21 @@
+.hexagon {
+  //Box-model
+  width: 8rem;
+  height: 6.4rem;
+  padding: 1.2rem 0;
+  line-height: 6.4rem;
+  //Typography
+  text-align: center;
+
+  &.hexagon-fill {
+    //Visual
+    background-color: $trainingcolor;
+    -webkit-mask-image: url("/resources/icons/container/fill.svg");
+    mask-image: url("/resources/icons/container/fill.svg");
+  }
+
+  &.hexagon-outline-alpha { background-image: url("/resources/icons/container/outline-alpha.svg"); }
+  &.hexagon-outline-positive { background-image: url("/resources/icons/container/outline-positive.svg"); }
+  &.hexagon-outline-negative { background-image: url("/resources/icons/container/outline-negative.svg"); }
+  &.hexagon-outline-remark { background-image: url("/resources/icons/container/outline-remark.svg"); }
+}

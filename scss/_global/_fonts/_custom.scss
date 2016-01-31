@@ -7,10 +7,10 @@ h1.display {
 }
 
 //Paragraph
-p.display {
+p.display,span.display {
   font-style: italic;
   font-size: 2.4rem;
-  color: rgba(254,255,255,0.75);
+  color: rgba(254,255,255,0.5);
   line-height: 2.9rem;
 }
 
@@ -18,4 +18,5 @@ p.display {
   font-style: normal;
   font-weight: 700;
   color: $trainingcolor;
+  text-transform: uppercase;
 }

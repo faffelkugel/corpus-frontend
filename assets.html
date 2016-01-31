@@ -15,7 +15,7 @@
   <!-- Apple Startup Image -->
   <link rel="apple-touch-startup-image" href="resources/img/backgrounds/splashscreen_bg.png">
 </head>
-<body>
+<body id="assets-page">
 
   <!-- Nav Bar Start -->
   <div class="unified-bar-container">
@@ -23,9 +23,9 @@
     <div class="navbar">
       <ul>
 
-        <!-- Left Icon --><li><a href="#"><img src="resources/icons/navbar/back.png"></a></li>
+        <!-- Left Icon --><li><a href="#"><img src="resources/icons/navbar/back.svg"></a></li>
         <!-- Heading --><li><h1>Programs</h1></li>
-        <!-- Right Icon --><li><a href="#"><img src="resources/icons/navbar/add.png"></a></li>
+        <!-- Right Icon --><li><a href="#"><img src="resources/icons/navbar/add.svg"></a></li>
 
       </ul>
     </div>
@@ -39,7 +39,7 @@
 
         <!-- Left Empty --><li></li>
         <!-- Searchbar --><li><form action="GET"><input type="search" name="search" value="" placeholder="Search..." class="searchbar"></form></li>
-        <!-- Right Icon --><li><a href="#"><img src="resources/icons/navbar/filter.png"></a></li>
+        <!-- Right Icon --><li><a href="#"><img src="resources/icons/navbar/filter.svg"></a></li>
 
       </ul>
     </div>
@@ -57,20 +57,172 @@
 
   <!-- Content Start -->
   <section class="page-content">
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <p>Paragraph</p>
-    <h4>Heading 4</h4>
-    <h1 class="display">Heading 1 with Display</h1>
-    <p class="display">Paragraph with Display</p>
-    <p class="display"><span class="strong">Strong</span> paragraph</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis tortor eu dapibus efficitur. Morbi ut ex et odio eleifend mattis in a nisi. Duis vitae elit id ex tempus tempor. Sed sit amet placerat elit. Praesent vitae tempor ipsum. Morbi venenatis enim placerat molestie interdum. Phasellus sed rhoncus urna. Donec facilisis fermentum diam vel maximus. Nulla interdum elit sit amet pretium suscipit. Phasellus nec tempus dolor, in feugiat dolor.<br><br>
-    Vestibulum bibendum est nec elementum sagittis. Cras ligula augue, varius quis dignissim porta, laoreet quis ligula. Nullam feugiat ex massa. Nulla facilisi. Suspendisse sed aliquet justo. Nunc leo nisi, pellentesque sollicitudin neque at, interdum placerat augue. Curabitur convallis sapien vitae dolor malesuada sollicitudin. Vivamus vehicula mauris urna, vitae porttitor libero bibendum sagittis. In libero dolor, mollis pellentesque tempus eget, rhoncus id odio. Vestibulum est urna, semper eu augue et, finibus vehicula purus. Nam pharetra ante sed lacinia tincidunt. Donec eget sem mattis, lobortis augue eget, lacinia libero. Integer rutrum sollicitudin gravida.<br><br>
-    Fusce dignissim pellentesque tincidunt. Aenean molestie lacinia tellus, in malesuada libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis suscipit sem libero, vel porttitor metus elementum rutrum. Maecenas fermentum fermentum dui, eu sollicitudin orci mollis at. Integer luctus justo non molestie gravida. Fusce quis rhoncus turpis. Donec nec laoreet tellus, congue facilisis purus. Quisque euismod ex ac sapien molestie consequat. Donec fringilla ullamcorper dignissim. Integer at mi a purus convallis mollis a quis purus.<br><br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis tortor eu dapibus efficitur. Morbi ut ex et odio eleifend mattis in a nisi. Duis vitae elit id ex tempus tempor. Sed sit amet placerat elit. Praesent vitae tempor ipsum. Morbi venenatis enim placerat molestie interdum. Phasellus sed rhoncus urna. Donec facilisis fermentum diam vel maximus. Nulla interdum elit sit amet pretium suscipit. Phasellus nec tempus dolor, in feugiat dolor.<br><br>
-    Vestibulum bibendum est nec elementum sagittis. Cras ligula augue, varius quis dignissim porta, laoreet quis ligula. Nullam feugiat ex massa. Nulla facilisi. Suspendisse sed aliquet justo. Nunc leo nisi, pellentesque sollicitudin neque at, interdum placerat augue. Curabitur convallis sapien vitae dolor malesuada sollicitudin. Vivamus vehicula mauris urna, vitae porttitor libero bibendum sagittis. In libero dolor, mollis pellentesque tempus eget, rhoncus id odio. Vestibulum est urna, semper eu augue et, finibus vehicula purus. Nam pharetra ante sed lacinia tincidunt. Donec eget sem mattis, lobortis augue eget, lacinia libero. Integer rutrum sollicitudin gravida.<br><br>
-    Fusce dignissim pellentesque tincidunt. Aenean molestie lacinia tellus, in malesuada libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis suscipit sem libero, vel porttitor metus elementum rutrum. Maecenas fermentum fermentum dui, eu sollicitudin orci mollis at. Integer luctus justo non molestie gravida. Fusce quis rhoncus turpis. Donec nec laoreet tellus, congue facilisis purus. Quisque euismod ex ac sapien molestie consequat. Donec fringilla ullamcorper dignissim. Integer at mi a purus convallis mollis a quis purus.</p>
+    <!-- List Start -->
+    <ul class="list">
+
+      <!-- Item #01 -->
+      <li class="item cf">
+        <div class="icon-container">
+          <div class="hexagon hexagon-fill"><img src="resources/icons/info/program.svg"></div>
+        </div>
+        <div class="content-container">
+          <h2>Programs</h2>
+          <p>Explore a selection of carefully crafted training programs, designed to suit your every need.</p>
+        </div>
+      </li>
+
+      <!-- Item #02 -->
+      <li class="item cf">
+        <div class="icon-container">
+          <div class="hexagon hexagon-outline-positive"><img src="resources/icons/info/positive.svg"></div>
+        </div>
+        <div class="content-container">
+          <h2>Do's</h2>
+          <ol><li>Grab the bar with a double underhand grip, slightly outside shoulder width.</li></ol>
+        </div>
+      </li>
+
+      <!-- Item #03 -->
+      <li class="item cf">
+        <div class="icon-container">
+          <div class="hexagon hexagon-fill"><h2>MON</h2></div>
+        </div>
+        <div class="content-container">
+          <h4>Programs</h4>
+          <p class="display">Part of <span class="strong">3 Day Workout Split Routine</span></p>
+          <div class="sub-container">
+            <img src="resources/icons/muscles/back_small.svg">
+            <img src="resources/icons/muscles/biceps_small.svg">
+          </div>
+        </div>
+      </li>
+
+      <!-- Item #04 -->
+      <li class="item cf">
+        <div class="icon-container">
+          <div class="hexagon hexagon-outline-alpha"><h2>TUE</h2></div>
+        </div>
+        <div class="content-container">
+          <p class="display">No Active Workouts.</p>
+        </div>
+      </li>
+
+      <!-- Item #05 -->
+      <li class="item cf">
+        <div class="content-container">
+          <h2>3 Day Workout Split Routine</h2>
+          <p>Explore a selection of carefully crafted training programs, designed to suit your every need.</p>
+          <div class="sub-container cf">
+            <div class="left">
+              <p class="display">By <span class="strong">Buff Dudes</span></p>
+            </div>
+            <div class="right">
+              <img src="resources/icons/muscles/biceps_small.svg">
+              <img src="resources/icons/workout/workout_small.svg">
+              <img src="resources/icons/workout/workout_small.svg">
+              <img src="resources/icons/workout/workout_small.svg">
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Item #06 -->
+      <li class="item cf">
+        <div class="content-container">
+          <h2>Description</h2>
+          <p>Barbell bent-over rows are a great exercise to address common technique weaknesses and flaws such as trunk stability and strength in the hinge position.<br><br>
+          However, when you do them with a supinated (underhand) grip, there's a greater overload stimulus on the biceps and you turn conventional barbell rows into an exercise that truly has a strong purpose.</p>
+        </div>
+      </li>
+
+      <!-- Section Header -->
+      <li class="section-header">
+        <div class="primary-container">
+          <img src="resources/icons/muscles/back_large.svg">
+          <img src="resources/icons/muscles/biceps_large.svg">
+        </div>
+        <div class="secondary-container">
+          <p class="display"><span class="strong">7</span> exercises</p>
+        </div>
+      </li>
+
+      <!-- Item #07 -->
+      <li class="item cf">
+        <div class="image-container">
+          <div class="image" style="background-image:url(resources/img/programs/3_day_split.png);"></div>
+        </div>
+        <div class="content-container">
+          <h2>High Plank</h2>
+          <p>Explore a selection of carefully crafted training programs, designed to suit your ev…</p>
+        </div>
+      </li>
+
+      <!-- Item #08 -->
+      <li class="item cf">
+        <div class="image-container">
+          <div class="image" style="background-image:url(resources/img/programs/3_day_split.png);"></div>
+        </div>
+        <div class="content-container">
+          <h2>Pull-ups</h2>
+          <p>Explore a selection of carefully crafted training programs, designed to suit your ev…</p>
+          <div class="sub-container">
+            <p class="display"><img src="resources/icons/exercise/sets.svg"><span class="strong">5</span> sets</p>
+            <p class="display"><img src="resources/icons/exercise/reps.svg"><span class="strong">10-15</span> reps</p>
+          </div>
+        </div>
+      </li>
+
+      <!-- Section Header -->
+      <li class="section-header">
+        <div class="primary-container">
+          <p><img src="resources/icons/muscles/abs_large.svg"> ABS <span class="display">&</span> Core</p>
+        </div>
+        <div class="secondary-container">
+          <p class="display"><span class="strong">32</span> exercises</p>
+        </div>
+      </li>
+
+      <!-- Item #09 -->
+      <li class="item cf">
+        <div class="content-container">
+          <h2>Related Posts</h2>
+          <!-- Post #01 -->
+          <a href="#">
+          <div class="sub-container cf">
+            <div class="left">
+              <h4>The Best Way to Row, Period</h4>
+              <p>https://www.t-nation.com/training/best-way-to-row-period</p>
+            </div>
+            <div class="right"><img src="resources/icons/navbar/forward.svg"></div>
+          </div>
+          </a>
+          <!-- Post #02 -->
+          <a href="#">
+          <div class="sub-container cf">
+            <div class="left">
+              <h4>The Best Way to Row, Period</h4>
+              <p>https://www.t-nation.com/training/best-way-to-row-period</p>
+            </div>
+            <div class="right"><img src="resources/icons/navbar/forward.svg"></div>
+          </div>
+          </a>
+        </div>
+      </li>
+
+    </ul>
+    <!-- List End -->
+    <!-- Text Styles Start -->
+    <div>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <p>Paragraph</p>
+      <h4>Heading 4</h4>
+      <h1 class="display">Heading 1 with Display</h1>
+      <p class="display">Paragraph with Display</p>
+      <p class="display"><span class="strong">Strong</span> paragraph</p>
+    </div>
+    <!-- Text Styles End -->
   </section>
   <!-- Content End -->
 

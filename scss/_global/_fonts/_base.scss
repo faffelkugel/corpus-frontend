@@ -21,6 +21,8 @@ h2 {
 
   font-size: 2.8rem;
   letter-spacing: .1rem;
+
+  margin-bottom: $tiny;
 }
 h3 {
   @include heading(400);
@@ -33,6 +35,8 @@ h4 {
   font-size: 2.8rem;
   color: $trainingcolor;
   line-height: 3.4rem;
+
+  margin-bottom: $tiny;
 }
 
 // Paragraph

@@ -1,3 +1,101 @@
 
-// sectionheader
-// items
+ul.list {
+  //Box-model
+  width: 100vw;
+  padding: 0;
+  //Typography
+  list-style: none;
+}
+
+// List Item
+li.item {
+  //Box-model
+  width: calc(100vw - 4rem);
+  padding: 0;
+  margin-left: 4rem;
+  //Visual
+  border-top: 1px solid rgba($lightcolor, .15);
+
+  &:last-child {
+    border-bottom: 1px solid rgba($lightcolor, .15);
+  }
+
+  .icon-container {
+    //Box-model
+    float: left;
+    width: 8rem;
+    padding: $medium 0;
+  }
+  .image-container {
+    //Box-model
+    float: left;
+    width: 16rem;
+    padding: $medium 0;
+
+    .image {
+      //Box-model
+      width: 100%;
+      height: 10rem;
+      //Visual
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.50);
+    }
+  }
+  .content-container {
+    //Box-model
+    float: left;
+    width: calc(100vw - 8rem);
+    padding: $medium $large $medium 0;
+
+    .sub-container {
+      //Box-model
+      margin-top: $x-small;
+
+      img { vertical-align: top; margin-right: $tiny; }
+      .right img { margin-left: $tiny; margin-right: 0; }
+      h4 { margin-bottom: 0; }
+      p { display: inline; margin-right: $x-large; }
+    }
+  }
+  .icon-container + .content-container {
+    width: calc(100vw - 19.2rem);
+    padding: $medium $large $medium $medium;
+  }
+  .image-container + .content-container {
+    width: calc(100vw - 27.2rem);
+    padding: $medium $large $medium $medium;
+  }
+}
+
+// Section Header
+li.section-header {
+  //Positioning
+  position: relative;
+  //Box-model
+  width: calc(100vw - 8rem);
+  height: 6.8rem;
+  padding: 0 4rem;
+  //Visual
+  background-color: $darkcolor;
+
+  .primary-container {
+    //Positioning
+    position: absolute;
+    left: 4rem;
+    top: 1.6rem;
+
+    img {
+      margin-right: $tiny;
+      vertical-align: top;
+    }
+  }
+  .secondary-container {
+    //Positioning
+    position: absolute;
+    right: 4rem;
+    top: 1.8rem;
+  }
+}
+
+.section-header + .item { border-top: 0; }

@@ -29,6 +29,21 @@
   background-color: $background-color;
 }
 
+// HACK: Temporary padding top, until we find proper solution.
+#assets-page {
+  padding-top: 28.8rem;
+}
+
+// HACK: Temporary padding-bottom, to accomidate for tabbar height. Need fix, since not all screens has tabbars.
+body {
+  padding-bottom: 9.8rem;
+}
+
+// HACK: Temporary hidden class to hide content. Duh!.
+.hidden {
+  display: none;
+}
+
 // Write Comments
 //  “TODO:” gives a good indication of things we need to check up on.
 // Use REM’s & EM’s

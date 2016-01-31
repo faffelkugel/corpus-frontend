@@ -17,3 +17,17 @@ input[type=search] { // Overrides Safari mobiles annoying border-radius on input
   -webkit-border-radius:0;
   border-radius:0;
 }
+
+
+// Ordered List
+ol {
+  //Box-model
+  padding: 0 2.4rem;
+  //Typography
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: $lightcolor;
+  line-height: 3.6rem;
+  //Misc.
+  list-style-type: disc;
+}
