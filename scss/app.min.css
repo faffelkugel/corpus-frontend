@@ -496,10 +496,10 @@ h1.display {
   letter-spacing: .4rem;
   line-height: 5.8rem; }
 
-p.display {
+p.display, span.display {
   font-style: italic;
   font-size: 2.4rem;
-  color: rgba(254, 255, 255, 0.75);
+  color: rgba(254, 255, 255, 0.5);
   line-height: 2.9rem; }
 
 .strong {
@@ -519,6 +519,14 @@ input[type=search] {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0; }
+
+ol {
+  padding: 0 2.4rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 3.6rem;
+  list-style-type: disc; }
 
 .tabbar-container {
   position: fixed;
@@ -634,27 +642,40 @@ li.item {
   width: calc(100vw - 4rem);
   padding: 0;
   margin-left: 4rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+  border-top: 1px solid rgba(255, 255, 255, 0.15); }
+  li.item:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
   li.item .icon-container {
     float: left;
     width: 8rem;
-    padding: 3.2rem 0;
-    background-color: rgba(255, 0, 0, 0.2); }
+    padding: 3.2rem 0; }
   li.item .image-container {
     float: left;
     width: 16rem;
-    padding: 3.2rem 0;
-    background-color: rgba(255, 0, 0, 0.2); }
+    padding: 3.2rem 0; }
+    li.item .image-container .image {
+      width: 100%;
+      height: 10rem;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5); }
   li.item .content-container {
     float: left;
     width: calc(100vw - 8rem);
-    padding: 3.2rem 4rem 3.2rem 0;
-    background-color: rgba(255, 255, 255, 0.1); }
+    padding: 3.2rem 4rem 3.2rem 0; }
     li.item .content-container .sub-container {
-      margin-top: 1.4rem;
-      background-color: rgba(255, 255, 255, 0.1); }
+      margin-top: 1.4rem; }
+      li.item .content-container .sub-container img {
+        vertical-align: top;
+        margin-right: 1rem; }
+      li.item .content-container .sub-container .right img {
+        margin-left: 1rem;
+        margin-right: 0; }
       li.item .content-container .sub-container h4 {
         margin-bottom: 0; }
+      li.item .content-container .sub-container p {
+        display: inline;
+        margin-right: 4.8rem; }
   li.item .icon-container + .content-container {
     width: calc(100vw - 19.2rem);
     padding: 3.2rem 4rem 3.2rem 3.2rem; }
@@ -663,10 +684,25 @@ li.item {
     padding: 3.2rem 4rem 3.2rem 3.2rem; }
 
 li.section-header {
+  position: relative;
   width: calc(100vw - 8rem);
   height: 6.8rem;
   padding: 0 4rem;
   background-color: #23282c; }
+  li.section-header .primary-container {
+    position: absolute;
+    left: 4rem;
+    top: 1.6rem; }
+    li.section-header .primary-container img {
+      margin-right: 1rem;
+      vertical-align: top; }
+  li.section-header .secondary-container {
+    position: absolute;
+    right: 4rem;
+    top: 1.8rem; }
+
+.section-header + .item {
+  border-top: 0; }
 
 .searchbar {
   width: calc(100% - 6.4rem);
@@ -679,12 +715,24 @@ li.section-header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
   border: none; }
 
-.iconit {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  -webkit-mask-image: url("/resources/icons/navbar/filter.svg");
-  mask-image: url("/resources/icons/navbar/filter.svg"); }
+.hexagon {
+  width: 8rem;
+  height: 6.4rem;
+  padding: 1.2rem 0;
+  line-height: 6.4rem;
+  text-align: center; }
+  .hexagon.hexagon-fill {
+    background-color: #ffab1a;
+    -webkit-mask-image: url("/resources/icons/container/fill.svg");
+    mask-image: url("/resources/icons/container/fill.svg"); }
+  .hexagon.hexagon-outline-alpha {
+    background-image: url("/resources/icons/container/outline-alpha.svg"); }
+  .hexagon.hexagon-outline-positive {
+    background-image: url("/resources/icons/container/outline-positive.svg"); }
+  .hexagon.hexagon-outline-negative {
+    background-image: url("/resources/icons/container/outline-negative.svg"); }
+  .hexagon.hexagon-outline-remark {
+    background-image: url("/resources/icons/container/outline-remark.svg"); }
 
 button[name="facebook"] {
   width: 100%;
@@ -728,7 +776,7 @@ button[name="signup"] {
   padding-top: 28.8rem; }
 
 body {
-  padding-bottom: 38.6rem; }
+  padding-bottom: 9.8rem; }
 
 .hidden {
   display: none; }

@@ -57,25 +57,13 @@
 
   <!-- Content Start -->
   <section class="page-content">
-    <!-- Text Styles Start -->
-    <div class="hidden">
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <p>Paragraph</p>
-      <h4>Heading 4</h4>
-      <h1 class="display">Heading 1 with Display</h1>
-      <p class="display">Paragraph with Display</p>
-      <p class="display"><span class="strong">Strong</span> paragraph</p>
-    </div>
-    <!-- Text Styles End -->
     <!-- List Start -->
     <ul class="list">
 
       <!-- Item #01 -->
       <li class="item cf">
         <div class="icon-container">
-          <div class="iconit"><p>Hello Text</p></div>
+          <div class="hexagon hexagon-fill"><img src="resources/icons/info/program.svg"></div>
         </div>
         <div class="content-container">
           <h2>Programs</h2>
@@ -86,24 +74,25 @@
       <!-- Item #02 -->
       <li class="item cf">
         <div class="icon-container">
-          <p>Icon</p>
+          <div class="hexagon hexagon-outline-positive"><img src="resources/icons/info/positive.svg"></div>
         </div>
         <div class="content-container">
           <h2>Do's</h2>
-          <ul><li>Grab the bar with a double underhand grip, slightly outside shoulder width.</li></ul>
+          <ol><li>Grab the bar with a double underhand grip, slightly outside shoulder width.</li></ol>
         </div>
       </li>
 
       <!-- Item #03 -->
       <li class="item cf">
         <div class="icon-container">
-          <p>Icon</p>
+          <div class="hexagon hexagon-fill"><h2>MON</h2></div>
         </div>
         <div class="content-container">
           <h4>Programs</h4>
           <p class="display">Part of <span class="strong">3 Day Workout Split Routine</span></p>
           <div class="sub-container">
-            <p>Hello</p>
+            <img src="resources/icons/muscles/back_small.svg">
+            <img src="resources/icons/muscles/biceps_small.svg">
           </div>
         </div>
       </li>
@@ -111,7 +100,7 @@
       <!-- Item #04 -->
       <li class="item cf">
         <div class="icon-container">
-          <p>Icon</p>
+          <div class="hexagon hexagon-outline-alpha"><h2>TUE</h2></div>
         </div>
         <div class="content-container">
           <p class="display">No Active Workouts.</p>
@@ -127,7 +116,12 @@
             <div class="left">
               <p class="display">By <span class="strong">Buff Dudes</span></p>
             </div>
-            <div class="right"><p>Icons</p></div>
+            <div class="right">
+              <img src="resources/icons/muscles/biceps_small.svg">
+              <img src="resources/icons/workout/workout_small.svg">
+              <img src="resources/icons/workout/workout_small.svg">
+              <img src="resources/icons/workout/workout_small.svg">
+            </div>
           </div>
         </div>
       </li>
@@ -143,13 +137,19 @@
 
       <!-- Section Header -->
       <li class="section-header">
-        <p>Section Header</p>
+        <div class="primary-container">
+          <img src="resources/icons/muscles/back_large.svg">
+          <img src="resources/icons/muscles/biceps_large.svg">
+        </div>
+        <div class="secondary-container">
+          <p class="display"><span class="strong">7</span> exercises</p>
+        </div>
       </li>
 
       <!-- Item #07 -->
       <li class="item cf">
         <div class="image-container">
-          <p>Image</p>
+          <div class="image" style="background-image:url(resources/img/programs/3_day_split.png);"></div>
         </div>
         <div class="content-container">
           <h2>High Plank</h2>
@@ -160,24 +160,30 @@
       <!-- Item #08 -->
       <li class="item cf">
         <div class="image-container">
-          <p>Image</p>
+          <div class="image" style="background-image:url(resources/img/programs/3_day_split.png);"></div>
         </div>
         <div class="content-container">
           <h2>Pull-ups</h2>
           <p>Explore a selection of carefully crafted training programs, designed to suit your ev…</p>
           <div class="sub-container">
-            <p class="display">By <span class="strong">Buff Dudes</span></p>
+            <p class="display"><img src="resources/icons/exercise/sets.svg"><span class="strong">5</span> sets</p>
+            <p class="display"><img src="resources/icons/exercise/reps.svg"><span class="strong">10-15</span> reps</p>
           </div>
         </div>
       </li>
 
       <!-- Section Header -->
       <li class="section-header">
-        <p>Section Header</p>
+        <div class="primary-container">
+          <p><img src="resources/icons/muscles/abs_large.svg"> ABS <span class="display">&</span> Core</p>
+        </div>
+        <div class="secondary-container">
+          <p class="display"><span class="strong">32</span> exercises</p>
+        </div>
       </li>
 
       <!-- Item #09 -->
-      <li class="item">
+      <li class="item cf">
         <div class="content-container">
           <h2>Related Posts</h2>
           <!-- Post #01 -->
@@ -187,7 +193,7 @@
               <h4>The Best Way to Row, Period</h4>
               <p>https://www.t-nation.com/training/best-way-to-row-period</p>
             </div>
-            <div class="right"><p>Icon</p></div>
+            <div class="right"><img src="resources/icons/navbar/forward.svg"></div>
           </div>
           </a>
           <!-- Post #02 -->
@@ -197,7 +203,7 @@
               <h4>The Best Way to Row, Period</h4>
               <p>https://www.t-nation.com/training/best-way-to-row-period</p>
             </div>
-            <div class="right"><p>Icon</p></div>
+            <div class="right"><img src="resources/icons/navbar/forward.svg"></div>
           </div>
           </a>
         </div>
@@ -205,6 +211,18 @@
 
     </ul>
     <!-- List End -->
+    <!-- Text Styles Start -->
+    <div>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <p>Paragraph</p>
+      <h4>Heading 4</h4>
+      <h1 class="display">Heading 1 with Display</h1>
+      <p class="display">Paragraph with Display</p>
+      <p class="display"><span class="strong">Strong</span> paragraph</p>
+    </div>
+    <!-- Text Styles End -->
   </section>
   <!-- Content End -->
 
