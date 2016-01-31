@@ -1,7 +1,18 @@
 
-.background-image {
-  width: 100%;
+
+#launch {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  // background-position: center;
 }
+
+
+// todo: delete styleing below
+// .background-image {
+//  width: 100%;
+//}
 
 #launch_buttons {
   width: calc(100% - 80px);
