@@ -1,3 +1,100 @@
 
-// card
-// card stack
+.card-stack-container {
+  //Positioning
+  position: relative;
+  //Box-model
+  width: calc(100vw - $medium*2);
+  padding: 0 $medium;
+  margin-top: -$huge;
+  z-index: 20;
+
+  & > p.display {
+    text-align: center;
+    margin-bottom: $small;
+  }
+
+  .card-stack {
+    //Box-model
+    margin-bottom: $medium;
+
+    .card-main {
+      //Box-model
+      width: 100%;
+      //Visual
+      background-color: $lightcolor;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,.5);
+
+      .image-container {
+        //Positioning
+        float: left;
+        //Box-model
+        width: 24rem;
+        height: 18rem;
+        //Visual
+        background-color: $darkcolor;
+        background-position: center;
+        background-size: cover;
+
+        .image-overlay {
+          //Positioning
+          position: relative;
+          //Box-model
+          width: 100%;
+          height: 100%;
+          padding: 2rem 0;
+          //Visual
+          background-color: rgba($background-color, .75);
+
+          .icon-container {
+            .hexagon-back {
+              margin: auto;
+              width: 13rem;
+              height: 11.9rem;
+              background-size: contain;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .content-container {
+        //Positioning
+        float: left;
+        //Box-model
+        width: calc(100% - 32rem);
+        height: calc(18rem - $medium);
+        padding: $medium $large 0 $large;
+        //Visual
+
+        .info-container {
+          h2, p.display { color: $darkcolor !important; }
+          p.display { display: inline-block; margin-right: $x-large; }
+        }
+        .sub-container {
+          margin-top: $x-small;
+
+          img {
+            margin-right: $x-small;
+          }
+        }
+      }
+    }
+    .card-secondary {
+      //Box-model
+      width: calc(100% - 1rem);
+      height: 0.5rem;
+      margin: auto;
+      //Visual
+      background-color: rgba($lightcolor, .35);
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,.5);
+    }
+    .card-tertiary {
+      //Box-model
+      width: calc(100% - 2rem);
+      height: 0.5rem;
+      margin: auto;
+      //Visual
+      background-color: rgba($lightcolor, .15);
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,.5);
+    }
+  }
+}
