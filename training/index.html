@@ -3,45 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, user-scalable=0"/>
-  <title>Corpus - health and fitness  </title>
-  <link rel="stylesheet" type="text/css" href="../scss/app.min.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Assets</title>
+  <link rel="stylesheet" href="/scss/app.min.css">
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="resources/touch/touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="resources/touch/touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="resources/touch/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="resources/touch/touch-icon-ipad-retina.png">
+  <!-- Apple Startup Image -->
+  <link rel="apple-touch-startup-image" href="resources/img/backgrounds/splashscreen_bg.png">
 </head>
-<body id="traning">
+<body id="training">
 
+  <!-- Nav Bar Start -->
+  <div class="unified-bar-container">
+    <div class="statusbar-container"></div>
+    <div class="navbar">
+      <ul>
 
-  <div class="program-count">
-    <p class="display"><span class="strong">2</span> active programs</p>
+        <!-- Left Icon --><li><a href="#"><img src=""></a></li>
+        <!-- Heading --><li><h1>Programs</h1></li>
+        <!-- Right Icon --><li><a href="#"><img src="/resources/icons/navbar/calendar.svg"></a></li>
+
+      </ul>
+    </div>
   </div>
+  <!-- Nav Bar End -->
 
-  <div class="card-slider">
-    <ul class="workout-cards-list">
-
-      <!-- Card 1 -->
-      <li class="workout-cards-item">
-        <div style="background-image: url(../resources/img/programs/3_day_split.png)"
-        class="workout-cards-item-background">
-        </div>
-        <div class="workout-cards-item-content">
-          <!-- Workout title -->
-          <h2>3 Day workout split routine</h2>
-          <!-- Coach name -->
+  <!-- Content Start -->
+  <section class="page-content">
+    <div class="card-list-container">
+      <p class="display"><span class="strong">1</span> active program</p>
+      <div class="card" style="background-image:url(/resources/img/programs/3_day_split.png);">
+        <div class="card-overlay">
+          <h2>3 Day Workout Split Routine</h2>
           <p class="display">By <span class="strong">Buff Dudes</span></p>
-          <div class="workout-cards-item-content-icons">
-            <!-- Goal icon -->
-            <img src="../resources/icons/goal/strength.svg" alt="Goal">
-            <ul>
-              <!-- Workout number of days -->
-              <li><img src="../resources/icons/workout/workout_small.svg" alt="Workout"></li>
-              <li><img src="../resources/icons/workout/workout_small.svg" alt="Workout"></li>
-              <li><img src="../resources/icons/workout/workout_small.svg" alt="Workout"></li>
-            </ul>
-          </div>
+          <ul>
+            <li><img src="/resources/icons/goal/strength.svg"></li>
+            <li><img src="/resources/icons/workout/workout_small.svg"></li>
+            <li><img src="/resources/icons/workout/workout_small.svg"></li>
+            <li><img src="/resources/icons/workout/workout_small.svg"></li>
+          </ul>
         </div>
-      </li>
+      </div>
+    </div>
+  </section>
+  <!-- Content End -->
 
-    </ul>
-
+  <!-- Tab Bar Start -->
+  <div class="tabbar-container">
+    <a href="#"><div class="tab active" id="tab-training">
+      <img src="/resources/icons/tabbar/training.svg" class="tabbar-icon">
+      <p>Training</p>
+    </div></a>
+    <a href="#"><div class="tab" id="tab-diet">
+      <img src="/resources/icons/tabbar/diet.svg" class="tabbar-icon">
+      <p>Diet</p>
+    </div></a>
+    <a href="#"><div class="tab" id="tab-today">
+      <img src="/resources/icons/tabbar/today.svg" class="tabbar-icon">
+      <p>Today</p>
+    </div></a>
+    <a href="#"><div class="tab" id="tab-me">
+      <img src="/resources/icons/tabbar/me.svg" class="tabbar-icon">
+      <p>Me</p>
+    </div></a>
+    <a href="#"><div class="tab" id="tab-more">
+      <img src="resources/icons/tabbar/more.svg" class="tabbar-icon">
+      <p>More</p>
+    </div></a>
   </div>
+  <!-- Tab Bar End -->
 
 </body>
 </html>
