@@ -15,6 +15,7 @@
 @import "_modules/navbar";
 @import "_modules/list";
 @import "_modules/header";
+@import "_modules/form";
 @import "_modules/card";
 @import "_modules/progress-bar";
 @import "_modules/icons";
@@ -22,10 +23,32 @@
 
 // Pages
 @import "_pages/_launch.scss";
+@import "_pages/_diet.scss";
+@import "_pages/_me.scss";
+@import "_pages/_more.scss";
 
 :root {
   font-size: 10px;
-  background-color: $background-color; // Temporary bg color.
+  background-color: $background-color;
+}
+
+// HACK: Temporary padding top, until we find proper solution.
+#assets-page {
+  padding-top: 28.8rem;
+}
+
+#headers {
+
+}
+
+// HACK: Temporary padding-bottom, to accomidate for tabbar height. Need fix, since not all screens has tabbars.
+body {
+  padding-bottom: 9.8rem;
+}
+
+// HACK: Temporary hidden class to hide content. Duh!.
+.hidden {
+  display: none;
 }
 
 // Write Comments

@@ -10,6 +10,7 @@
   //Typography
   //Visual
   background-color: rgba(26,30,33,.9);
+  -webkit-backdrop-filter: blur(0.5rem);
   //Misc
 
   .tab {
@@ -42,3 +43,5 @@
     &.active#tab-more { background-color: $morecolor; }
   }
 }
+
+// TODO: See if we can rewrite the active tabs.

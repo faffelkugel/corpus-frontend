@@ -5,3 +5,11 @@
   color: $lightcolor;
   text-transform: uppercase;
 }
+
+//Navbar List
+@mixin ul-list {
+  //Box-model
+  padding: 0 $medium;
+  //Typography
+  list-style: none;
+}
