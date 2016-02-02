@@ -46,6 +46,11 @@ body {
   padding-bottom: 9.8rem;
 }
 
+.body-container {
+  width: 100vw;
+  height: 100vh;
+}
+
 // HACK: Temporary hidden class to hide content. Duh!.
 .hidden {
   display: none;
