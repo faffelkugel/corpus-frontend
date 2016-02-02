@@ -873,7 +873,7 @@ li.section-header {
       line-height: 12rem;
       color: #ffab1a; }
 
-button[name="facebook"] {
+.button-facebook {
   width: 100%;
   height: 44px;
   margin-bottom: 12px;
@@ -881,15 +881,15 @@ button[name="facebook"] {
   border: none;
   color: white; }
 
-button[name="signin"] {
+.button-signin {
   width: calc(50% - 6px);
   height: 44px;
   float: left;
   background: #23282c;
-  border: none;
+  border: 2px solid #23282c;
   color: white; }
 
-button[name="signup"] {
+.button-signup {
   width: calc(50% - 6px);
   height: 44px;
   float: right;
